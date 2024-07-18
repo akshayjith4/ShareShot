@@ -1,0 +1,5 @@
+Captured Images Storage:
+The images captured using ShareShot are saved locally in the files folder within this directory. Each image is named according to the timestamp of when it was captured.
+
+Locating Captured Images:
+You can find the captured images in the files folder. This folder is created automatically by the application when you capture an image. If you need to access or manage these images, navigate to the files folder in this directory
