@@ -21,9 +21,11 @@ Installation Steps
 git clone https://github.com/akshayjith4/shareshot.git
 cd shareshot
 
+
 2.Install dependencies:
 
 pip install -r requirements.txt
+
 
 3.Set up Filestack API key:
 
@@ -32,6 +34,7 @@ Create a secret directory in the root of the project.
 Inside secret, create a Python file named filestack_apikey.py.
 Add your API key to filestack_apikey.py:
 API_KEY = 'your_actual_filestack_api_key_here'
+
 
 4.Run the application:
 
