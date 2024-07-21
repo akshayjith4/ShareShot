@@ -1,5 +1,3 @@
-#ShareShot
-
 ShareShot is a Kivy-based application that simplifies the process of capturing and sharing images using your device's camera. It integrates with Filestack to upload images and generate shareable links effortlessly.
 
 Features
