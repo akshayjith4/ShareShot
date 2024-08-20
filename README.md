@@ -1,59 +1,63 @@
-ShareShot is a Kivy-based application that simplifies the process of capturing and sharing images using your device's camera. It integrates with Filestack to upload images and generate shareable links effortlessly.
+# ShareShot
 
-Features
-Camera Screen: Capture images using your device's camera.
-Image Screen: Upload captured images to Filestack and generate shareable links.
-Copy Link: Copy the generated link to the clipboard.
-Open Link: Open the generated link in the default web browser.
+**ShareShot** is a Kivy-based application that simplifies the process of capturing and sharing images using your device's camera. It integrates with Filestack to upload images and generate shareable links effortlessly.
 
+## Features
 
-Installation
-Prerequisites
-Python 3.6+
-Kivy 2.3.0
-Filestack Python library
+- **Camera Screen**: Capture images using your device's camera.
+- **Image Screen**: Upload captured images to Filestack and generate shareable links.
+- **Copy Link**: Copy the generated link to the clipboard.
+- **Open Link**: Open the generated link in the default web browser.
 
-Installation Steps
+## Installation
 
-1.Clone the repository:
+### Prerequisites
 
-git clone https://github.com/akshayjith4/shareshot.git
-cd shareshot
+- Python 3.6+
+- Kivy 2.3.0
+- Filestack Python library
 
+### Installation Steps
 
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/akshayjith4/shareshot.git
+    cd shareshot
+    ```
 
-2.Install dependencies:
+2. **Install dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-pip install -r requirements.txt
+3. **Set up Filestack API key**:
+    - Obtain a Filestack API key from [Filestack](https://www.filestack.com/).
+    - Create a `secret` directory in the root of the project.
+    - Inside `secret`, create a Python file named `filestack_apikey.py`.
+    - Add your API key to `filestack_apikey.py`:
+        ```python
+        API_KEY = 'your_actual_filestack_api_key_here'
+        ```
 
+4. **Run the application**:
+    ```bash
+    python main.py
+    ```
 
+## Usage
 
-3.Set up Filestack API key:
+- **Start Camera**: Opens the camera to capture images.
+- **Capture**: Takes a picture and saves it locally.
+- **Create Sharable Link**: Uploads the captured image to Filestack and displays the generated link.
+- **Copy Link**: Copies the generated link to the clipboard.
+- **Open Link**: Opens the generated link in the default web browser.
 
-Obtain a Filestack API key from Filestack.
-Create a secret directory in the root of the project.
-Inside secret, create a Python file named filestack_apikey.py.
-Add your API key to filestack_apikey.py:
-API_KEY = 'your_actual_filestack_api_key_here'
+## Contributing
 
-
-
-4.Run the application:
-
-python main.py
-
-
-Usage
-Start Camera: Opens the camera to capture images.
-Capture: Takes a picture and saves it locally.
-Create Sharable link: Uploads the captured image to Filestack and displays the generated link.
-Copy Link: Copies the generated link to the clipboard.
-Open Link: Opens the generated link in the default web browser.
-
-Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
+## Acknowledgments
 
-Acknowledgments
-Built using Kivy
-Uses the Filestack Python library
+- Built using [Kivy](https://kivy.org/)
+- Uses the [Filestack Python library](https://github.com/filestack/filestack-python)
+
